@@ -1,0 +1,114 @@
+body {
+    background-color: #161616;
+}
+
+.container {
+    margin: auto;
+    background-color: #161616;
+
+}
+
+.text {
+    font-size: 60px;
+    color:white;
+}
+
+.mborder {
+    border-width: 6px;
+    border-style:solid;
+    border-radius: 10px;
+    border-color: white;
+    padding-left: 10px;
+}
+
+.bigbox {
+    height: 350px;
+    margin: 30px 10px 10px 10px;
+}
+
+.smallbox {
+    width: 46%;
+    height: 280px;
+    /*background-color: blue;*/
+    margin: 10px 10px 10px 10px;
+
+}
+
+.bolt-character {
+    margin-right: 10px;
+    float: left;
+}
+
+/* Answer */
+
+#dapan-a {
+    float: left;
+}
+
+#dapan-b {
+    float: right;
+}
+
+#dapan-c {
+    float: left;
+}
+
+#dapan-d {
+    float: right;
+}
+
+/* Buttons */
+
+.buttons {
+    clear: both;
+}
+
+#prev {
+    background-image: url("../img/prev.png");
+    width: 70px;
+    height: 70px;
+    background-size: 70px 70px;
+    float: left;
+    margin-right: 10px;
+}
+
+#next {
+    background-image: url("../img/next.png");
+    width: 70px;
+    height: 70px;
+    background-size: 70px 70px;
+    float: left;
+    margin-right: 10px;
+}
+
+#show {
+    background-image: url("../img/show.png");
+    width: 70px;
+    height: 70px;
+    background-size: 70px 70px;
+    float: left;
+    margin-right: 10px;
+}
+
+#start {
+    background-image: url("../img/start.png");
+    width: 70px;
+    height: 70px;
+    background-size: 70px 70px;
+    float: left;
+    margin-right: 10px;
+}
+
+/* Counter */
+#counter {
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #7F7F7F;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+#bar {
+    width: 0%;
+    height: 30px;
+    background-color: white;
+}

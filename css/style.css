@@ -8,6 +8,15 @@ body {
 
 }
 
+@font-face {
+    font-family:font_board;
+    src:url('../font/DKCrayonCrumble.ttf') format('truetype'),
+    url('../font/DKCrayonCrumble.eot#iefix') format('embedded-opentype'),
+    url('../font/DKCrayonCrumble.woff') format('woff');
+    font-weight:normal;
+    font-style:normal;
+}
+
 .text {
     font-size: 60px;
     color:white;
@@ -92,6 +101,15 @@ body {
 
 #start {
     background-image: url("../img/start.png");
+    width: 70px;
+    height: 70px;
+    background-size: 70px 70px;
+    float: left;
+    margin-right: 10px;
+}
+
+#openda {
+    background-image: url("../img/a.png");
     width: 70px;
     height: 70px;
     background-size: 70px 70px;

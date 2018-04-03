@@ -1,6 +1,8 @@
 var Tcolor = "#00B268";
 var Fcolor = "#FF3E1B";
 var resetCounter = 0;
+var opened = 0;
+var chooseable = 0;
 
 
 
@@ -19,15 +21,17 @@ function blink(elem, color) {
 }
 
 function checkAnswer() {
-    cauhoi = question[current];
-    id = $(this).attr('id');
-    check = id[id.length-1]
-    console.log(check)
-    if (check == cauhoi.answer) {
-        blink($(this), Tcolor);
-    }
-    else {
-        blink($(this), Fcolor);
+    if (chooseable) {
+        cauhoi = question[current];
+        id = $(this).attr('id');
+        check = id[id.length-1]
+        console.log(check)
+        if (check == cauhoi.answer) {
+            blink($(this), Tcolor);
+        }
+        else {
+            blink($(this), Fcolor);
+        }
     }
 }
 
@@ -67,10 +71,29 @@ function reload() {
 function setQuestion(question) {
     $("#cauhoi").text(question.cauhoi);
     $("#qid").text("Câu hỏi " + (current+1) + ": ");
-    $("#da-c").text(question.c);
-    $("#da-b").text(question.b);
-    $("#da-a").text(question.a);
-    $("#da-d").text(question.d);
+    $("#da-a").text("");
+    $("#da-b").text("");
+    $("#da-c").text("");
+    $("#da-d").text("");
+    opened = 0;
+    chooseable = 0;
+}
+
+function openAnswer() {
+    q = question[current];
+    if (opened < 4) {
+        if (opened == 0)
+            $("#da-a").text(q.a);
+        if (opened == 1)
+            $("#da-b").text(q.b);
+        if (opened == 2)
+            $("#da-c").text(q.c);
+        if (opened == 3) {
+            $("#da-d").text(q.d);
+            chooseable = 1;
+        }   
+        opened++;    
+    }
 }
 
 function nextQuestion() {
@@ -94,6 +117,7 @@ $(document).ready(function(){
     $("#show").click(showAnswer);
     $("#next").click(nextQuestion);
     $("#prev").click(prevQuestion);
+    $("#openda").click(openAnswer);
 
     $("#dapan-a").click(checkAnswer);
     $("#dapan-b").click(checkAnswer);

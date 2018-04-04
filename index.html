@@ -2,9 +2,13 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/modalbox.css">
+        <link rel="stylesheet" href="css/giftbox.css">
         <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
         <script src="js/question.js" charset="utf-8"></script>
         <script src="js/animation.js" charset="utf-8"></script>
+        <script src="js/modalbox.js"></script>
+        <script src="js/giftbox.js"></script>
     </head>
     <body>
         <div class="container">
@@ -40,7 +44,44 @@
                 <div id="next"></div>
                 <div id="show"></div>
                 <div id="start"></div>
+                <div id="openda"></div>
+                <div id="giftbtn" class="trigger"></div>
+        
             </div>
         </div>
+
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="allgift">
+                    <div class="giftbox" id="g1">1</div>
+                    <div class="giftbox" id="g2">2</div>
+                    <div class="giftbox" id="g3">3</div>
+                    <div class="giftbox" id="g4">4</div>
+                    <div class="giftbox" id="g5">5</div>
+                    <div class="giftbox" id="g6">6</div>
+                    <div class="giftbox" id="g7">7</div>
+                    <div class="giftbox" id="g8">8</div>
+                    <div class="giftbox" id="g9">9</div>
+                    <div class="giftbox" id="g10">10</div>
+                    <div class="giftbox" id="g11">11</div>
+                    <div class="giftbox" id="g12">12</div>
+                    <div class="giftbox" id="g13">13</div>
+                    <div class="giftbox" id="g14">14</div>
+                    <div class="giftbox" id="g15">15</div>
+                    <div class="giftbox" id="g16">16</div>
+                </div>
+          
+                <div class="showgift">
+                    <span>Bạn nhận được:</span>
+                    <br>
+                    <span id="mygift"></span>
+                </div>
+            </div>
+        </div>
+
+
+
+
     </body>
 </html>

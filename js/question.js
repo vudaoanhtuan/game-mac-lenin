@@ -65,6 +65,14 @@ var question = [
         answer: "d"
     },
     {
+        cauhoi: "Tư bản xã hội là tổng hợp các ... của xã hội, vận động đan xen nhau, liên hệ và phụ thuộc lẫn nhau?",
+        a: "tư bản tư nhân",
+        b: "tư bản công nghiệp",
+        c: "tư bản cá biệt",
+        d: "tư bản cá thể",
+        answer: "c"
+    },
+    {
         cauhoi: "Chu kỳ kinh tế của chủ nghĩa tư bản là khoảng thời gian nền kinh tế tư bản chủ nghĩa vận động từ...",
         a: "cuối cuộc khủng hoảng này đến đầu khủng hoảng sau",
         b: "đầu cuộc khủng hoảng này đến cuối khủng hoảng sau",
@@ -79,6 +87,14 @@ var question = [
         c: "C + V + M",
         d: "C + V",
         answer: "c"
+    },
+    {
+        cauhoi: "Tuần hoàn của tư bản gồm bao nhiêu giai đoạn",
+        a: "2",
+        b: "3",
+        c: "4",
+        d: "5",
+        answer: "b"
     }
 
 ];

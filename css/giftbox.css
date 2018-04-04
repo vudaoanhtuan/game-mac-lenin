@@ -1,0 +1,38 @@
+.giftbox {
+    width: 200px;
+    height: 120px;
+    border-width: 3px;
+    border-style:solid;
+    border-radius: 10px;
+    border-color: black;
+    float: left;
+    margin: 5px 5px 5px 5px;
+    font-size: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+#g5, #g9, #g13 {
+    clear: both;
+}
+
+.allgift {
+
+    float: left;
+}
+
+.showgift {
+    margin-top: 5px;
+    width: 600px;
+    height: 530px;
+    border-width: 3px;
+    border-style:solid;
+    border-radius: 10px;
+    border-color: black;
+    margin-left: 80px;
+    float: left;
+    text-align: center;
+    font-size: 80px;
+}

@@ -55,7 +55,8 @@ function startCounter() {
 function showAnswer() {
     cauhoi = question[current];
     id = "#dapan-"+cauhoi.answer;
-    blink($(id), Tcolor);
+    if (chooseable)
+        blink($(id), Tcolor);
 }
 
 function reload() {
@@ -111,6 +112,9 @@ function prevQuestion() {
         reload();
     }
 }
+
+
+
 
 $(document).ready(function(){
     $("#start").click(startCounter);

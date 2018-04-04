@@ -18,7 +18,7 @@ body {
 }
 
 .text {
-    font-size: 60px;
+    font-size: 70px;
     color:white;
 }
 
@@ -117,6 +117,15 @@ body {
     margin-right: 10px;
 }
 
+#giftbtn {
+    background-image: url("../img/gift.png");
+    width: 70px;
+    height: 70px;
+    background-size: 70px 70px;
+    float: left;
+    margin-right: 10px;
+}
+
 /* Counter */
 #counter {
     margin-left: 50px;
@@ -130,3 +139,4 @@ body {
     height: 30px;
     background-color: white;
 }
+
